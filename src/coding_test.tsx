@@ -46,57 +46,84 @@
  * Classes
  */
 
- class Item {
+enum PRODUCT_TYPE {
+    NORMAL = 1,
+    ORGANIC,
+    AGED,
+    INORGANIC,
+}
+class Item {
     name: string;
     sellIn: number;
     quality: number;
     // size?: boolean; // SJ: removed property as it is never used
+    product_type: PRODUCT_TYPE;
 
-    constructor(name: string, sellIn: number, quality: number) {
+    constructor(name: string, sellIn: number, quality: number, product_type: PRODUCT_TYPE = PRODUCT_TYPE.NORMAL) {
         this.name = name;
         this.sellIn = sellIn;
+        if ((quality > 25) || (quality < 0)) {
+            throw new Error("Quality has to between 0 and 25")
+        }
         this.quality = quality;
+        this.product_type = product_type;
     }
 }
 
 class StoreInventory {
     items: Array<Item>;
 
-    constructor(items = [] as Array<Item> ) {
+    constructor(items = [] as Array<Item>) {
         this.items = items;
     }
 
     updateQuality() {
+        // Keep track of items to remove
+        let itemsToRemove = [];
+
+        // Loop through store inventory
         for (let i = 0; i < this.items.length; i++) {
-            if (this.items[i].name != 'Cheddar Cheese') {
-                // if (this.items[i].sellIn < 3) { # Summer sale promotion
-                //     this.items[i].onSale = true;
-                // }
-                if (this.items[i].quality > 0) {
-                    if (this.items[i].name != 'Instant Ramen') {
-                        this.items[i].quality = this.items[i].quality - 1
+            // Update sellIn date and quality based on product type
+            switch (this.items[i].product_type) {
+                case PRODUCT_TYPE.AGED:
+                    this.items[i].sellIn--;
+                    this.items[i].quality++;
+                    break;
+                case PRODUCT_TYPE.ORGANIC:
+                    this.items[i].sellIn--;
+                    this.items[i].quality -= 2;
+                    if ( this.items[i].sellIn < 0 ) {
+                        this.items[i].quality -= 2;
                     }
-                }
-            } else {
-                // if (this.items[i].sellIn < 3) { # Summer sale promotion
-                //     this.items[i].onSale = true;
-                // }              
-                if (this.items[i].quality < 50) {
-                    this.items[i].quality = this.items[i].quality + 1
-                }
-            }
-            if (this.items[i].name != 'Instant Ramen') {
-                this.items[i].sellIn = this.items[i].sellIn - 1;
-            }
-            if (this.items[i].sellIn < 0) {
-                if (this.items[i].name != 'Cheddar Cheese') {
-                    this.items[i].quality = this.items[i].quality - this.items[i].quality
-                } else {
-                    if (this.items[i].quality < 50) {
-                        this.items[i].quality = this.items[i].quality + 1
+                    break;
+                case PRODUCT_TYPE.INORGANIC:
+                    // does not have to sold and does not decrease in quality
+                    break;
+                case PRODUCT_TYPE.NORMAL:
+                    this.items[i].sellIn--;
+                    this.items[i].quality--;
+                    if ( this.items[i].sellIn < 0 ) {
+                        this.items[i].quality--;
                     }
-                }
+                    break;
+                default:
+                    throw new Error("Invalid product type")
             }
+
+            // Prevent from quality to go below 0
+            if ( this.items[i].quality < 0 ) {
+                this.items[i].quality = 0;
+            }
+
+            // Create list of items to remove as they are too old
+            if ( this.items[i].sellIn < -5 ) {
+                itemsToRemove.push(i)
+            }
+        }
+
+        // Remove old items
+        for (let i = 0; i < itemsToRemove.length; i++) {
+            items.splice(itemsToRemove[i] - i, 1)
         }
 
         return this.items;
@@ -111,23 +138,22 @@ class StoreInventory {
 let items = [
     new Item("Apple", 10, 10),
     new Item("Banana", 7, 9),
-    new Item("Strawberry", 5, 10),
-    new Item("Cheddar Cheese", 10, 16),
-    new Item("Instant Ramen", 0, 5),
-    // this Organic item does not work properly yet
-    new Item("Organic Avocado", 5, 16)
+    new Item("Strawberry", 6, 11),
+    new Item("Cheddar Cheese", 10, 16, PRODUCT_TYPE.AGED),
+    new Item("Instant Ramen", 0, 5, PRODUCT_TYPE.INORGANIC),
+    new Item("Organic Avocado", 5, 16, PRODUCT_TYPE.ORGANIC)
 ];
 
 
 let storeInventory = new StoreInventory(items);
 
-let days: number = 10;
+let days: number = 20;
 
 for (let i = 0; i < days; i++) {
-    console.log("Day " + i + "  ---------------------------------");
-    console.log("                  name      sellIn quality");
+    console.log("Day " + (i + 1) + "  ---------------------------------------");
+    console.log("                  name      sellIn quality type");
     let data = items.map(element => {
-        return [element.name, element.sellIn, element.quality];
+        return [element.name, element.sellIn, element.quality, PRODUCT_TYPE[element.product_type]];
 
     });
     console.table(data)
@@ -152,13 +178,32 @@ chai.use(sinonChai)
 try {
 
     let testItmes = [
-        new Item("test", 10, 10)
+        new Item("test_organic", 10, 10, PRODUCT_TYPE.ORGANIC),
+        new Item("test_inorganic", 10, 10, PRODUCT_TYPE.INORGANIC),
+        new Item("test_cheese", 10, 10, PRODUCT_TYPE.AGED),
+        new Item("test_normal", 10, 10),
+        new Item("test_old", 0, 0),
     ];
     let testInventory = new StoreInventory(testItmes);
 
+    // Check for exception when entering wrong quality
+    chai.expect(function () { new Item("test_wrong", 10, -1) }).to.throw('Quality has to between 0 and 25');
+
     // Decreases quality
     testInventory.updateQuality();
-    expect(testItmes[0].sellIn).to.equal(9);
+
+    // Check for sell in update
+    expect(testItmes[1].sellIn).to.equal(10);
+    expect(testItmes[3].sellIn).to.equal(9);
+
+    // Check for quality update
+    expect(testItmes[0].quality).to.equal(8);
+    expect(testItmes[1].quality).to.equal(10);
+    expect(testItmes[2].quality).to.equal(11);
+    expect(testItmes[3].quality).to.equal(9);
+
+    // Check for negative values
+    expect(testItmes[4].quality).to.equal(0);
 
     console.log(`✅ Tests passed!`);
 
