@@ -1,0 +1,52 @@
+import { Item, PRODUCT_TYPE } from "./ItemClass";
+import { StoreInventory } from "./StoreInventoryClass";
+/**  
+ * Unit Tests 
+ */
+
+let chai = require('chai')
+// let sinon = require('sinon')
+let sinonChai = require('sinon-chai')
+let expect = chai.expect
+
+chai.should()
+chai.use(sinonChai)
+
+console.log('Tests started');
+
+try {
+
+    let testItmes = [
+        new Item("test_organic", 10, 10, PRODUCT_TYPE.ORGANIC),
+        new Item("test_inorganic", 10, 10, PRODUCT_TYPE.INORGANIC),
+        new Item("test_cheese", 10, 10, PRODUCT_TYPE.AGED),
+        new Item("test_normal", 10, 10),
+        new Item("test_old", 0, 0),
+    ];
+    let testInventory = new StoreInventory(testItmes);
+
+    // Check for exception when entering wrong quality
+    chai.expect(function () { new Item("test_wrong", 10, -1) }).to.throw('Quality has to between 0 and 25');
+
+    // Decreases quality
+    testInventory.updateQuality();
+
+    // Check for sell in update
+    expect(testItmes[1].sellIn).to.equal(10);
+    expect(testItmes[3].sellIn).to.equal(9);
+
+    // Check for quality update
+    expect(testItmes[0].quality).to.equal(8);
+    expect(testItmes[1].quality).to.equal(10);
+    expect(testItmes[2].quality).to.equal(11);
+    expect(testItmes[3].quality).to.equal(9);
+
+    // Check for negative values
+    expect(testItmes[4].quality).to.equal(0);
+
+    console.log(`✅ Tests passed!`);
+
+} catch (e) {
+    console.warn(`❌ Tests failed`);
+    console.error(e);
+}

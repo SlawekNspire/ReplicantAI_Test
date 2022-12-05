@@ -201,10 +201,25 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
-      "./src/coding_test.tsx": {
-        "version": "e3a29f33cf9e6ddae74b77804fef3d223820a3a4ca1e3746fa455d0d92694958",
-        "signature": "68032d5b4745caa5183753234109c963e942de9901b6612624883bbb757a8815",
-        "affectsGlobalScope": true
+      "./src/itemclass.ts": {
+        "version": "16413e0269e4ddaf8fdfb2ba0357a0dba09d9d241051107b0999b8bfe691fa11",
+        "signature": "95efa7b5c3ffd8fb423452cb748b3fd7adba018343164e7d44f05480e7a4ffb9",
+        "affectsGlobalScope": false
+      },
+      "./src/storeinventoryclass.ts": {
+        "version": "d2c569b1255b19276326206bd03a4e42cfbf3cefd89d2b2f519868407d471cb5",
+        "signature": "3d998f5f6b6709e7b260e6264f0adb143b6623bdaed3cdfc8386151efcb033be",
+        "affectsGlobalScope": false
+      },
+      "./src/inventory.ts": {
+        "version": "b828317927a1a667fa59f1c4c617494ae2f40176218a16f9f35cd3239389d152",
+        "signature": "0504ff69197223232bb7a70b6a352f7ba4545e566be8b4523c1081406391453c",
+        "affectsGlobalScope": false
+      },
+      "./src/inventory_ut.ts": {
+        "version": "c528973ffb4967cd6a9378d0db58b168eeb00e54d16b8bc5363b09e8c1d3a0f7",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
       },
       "./node_modules/@types/node/ts4.8/assert.d.ts": {
         "version": "7e771891adaa85b690266bc37bd6eb43bc57eecc4b54693ead36467e7369952a",
@@ -958,8 +973,22 @@
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
         "./node_modules/@types/node/ts4.8/util.d.ts"
       ],
-      "./src/coding_test.tsx": [
+      "./src/inventory.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts",
+        "./src/itemclass.ts",
+        "./src/storeinventoryclass.ts"
+      ],
+      "./src/inventory_ut.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts",
+        "./src/itemclass.ts",
+        "./src/storeinventoryclass.ts"
+      ],
+      "./src/itemclass.ts": [
         "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./src/storeinventoryclass.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts",
+        "./src/itemclass.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1433,6 +1462,9 @@
       ],
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts": [
         "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./src/storeinventoryclass.ts": [
+        "./src/itemclass.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1530,7 +1562,10 @@
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.scripthost.d.ts",
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./src/coding_test.tsx"
+      "./src/inventory.ts",
+      "./src/inventory_ut.ts",
+      "./src/itemclass.ts",
+      "./src/storeinventoryclass.ts"
     ]
   },
   "version": "3.9.10"
