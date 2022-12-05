@@ -1,0 +1,23 @@
+{
+  "name": "vscode-typescript-debugging",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^3.4.1",
+    "chai": "^4.3.7",
+    "sinon": "^15.0.0",
+    "sinon-chai": "^3.7.0"
+  },
+  "scripts": {
+    "start": "node out/coding_test.js",
+    "prestart": "npm run build",
+    "build": "tsc"
+  },
+  "keywords": [
+    "VS Code",
+    "TypeScript",
+    "Debugging"
+  ],
+  "author": "Philipp Kief",
+  "license": "MIT"
+}
