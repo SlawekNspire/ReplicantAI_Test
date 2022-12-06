@@ -202,22 +202,22 @@
         "affectsGlobalScope": true
       },
       "./src/itemclass.ts": {
-        "version": "16413e0269e4ddaf8fdfb2ba0357a0dba09d9d241051107b0999b8bfe691fa11",
-        "signature": "95efa7b5c3ffd8fb423452cb748b3fd7adba018343164e7d44f05480e7a4ffb9",
+        "version": "a56d0c0e0bff12280be637f7fd2f43a7e183010e80791fab71be384f726b52fe",
+        "signature": "a1feafeb6162370199a879fa45e3a8ca0679823abcb2f85e97a113a901f61a3d",
         "affectsGlobalScope": false
       },
       "./src/storeinventoryclass.ts": {
-        "version": "d2c569b1255b19276326206bd03a4e42cfbf3cefd89d2b2f519868407d471cb5",
-        "signature": "3d998f5f6b6709e7b260e6264f0adb143b6623bdaed3cdfc8386151efcb033be",
+        "version": "35f1af7c13c8901ccdd0fb271398c569de16f180053d42def4714ca9481af85c",
+        "signature": "f0a2fbeb3324ef1ba2d4d2c207627639b1f2c1c997a1643fa309fe0e9f91eb08",
         "affectsGlobalScope": false
       },
       "./src/inventory.ts": {
-        "version": "b828317927a1a667fa59f1c4c617494ae2f40176218a16f9f35cd3239389d152",
+        "version": "56a28b902b7b1689cb87ede9df4fcf88b4b2dc9ebf04b1db18c199ff8040adfe",
         "signature": "0504ff69197223232bb7a70b6a352f7ba4545e566be8b4523c1081406391453c",
         "affectsGlobalScope": false
       },
       "./src/inventory_ut.ts": {
-        "version": "c528973ffb4967cd6a9378d0db58b168eeb00e54d16b8bc5363b09e8c1d3a0f7",
+        "version": "a374e80aaa130cb46f9332d9ce7b9fb7e3dae5b9d9e826e9667138fdd801f900",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },

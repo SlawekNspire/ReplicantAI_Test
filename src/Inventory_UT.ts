@@ -17,11 +17,11 @@ console.log('Tests started');
 try {
 
     let testItmes = [
-        new Item("test_organic", 10, 10, PRODUCT_TYPE.ORGANIC),
+        new Item("test_organic",   10, 10, PRODUCT_TYPE.ORGANIC),
         new Item("test_inorganic", 10, 10, PRODUCT_TYPE.INORGANIC),
-        new Item("test_cheese", 10, 10, PRODUCT_TYPE.AGED),
-        new Item("test_normal", 10, 10),
-        new Item("test_old", 0, 0),
+        new Item("test_cheese",    10, 10, PRODUCT_TYPE.AGED),
+        new Item("test_normal",    10, 10),
+        new Item("test_old",        0,  0),
     ];
     let testInventory = new StoreInventory(testItmes);
 
@@ -32,7 +32,7 @@ try {
     testInventory.updateQuality();
 
     // Check for sell in update
-    expect(testItmes[1].sellIn).to.equal(10);
+    console.log(expect(testItmes[1].sellIn).to.equal(10));
     expect(testItmes[3].sellIn).to.equal(9);
 
     // Check for quality update

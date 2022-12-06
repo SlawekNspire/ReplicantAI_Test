@@ -1,12 +1,24 @@
-import { Item, PRODUCT_TYPE } from "./ItemClass";
+import { Item, PRODUCT_TYPE, MIN_SELL_EXPIRATION, MAX_PRODUCT_QUALITY } from "./ItemClass";
 
+/**
+ * StoryInventory class.
+ * Responsible for keeping track of items, their selling date, and quality
+ */
 export class StoreInventory {
     items: Array<Item>;
 
+    /**
+     * Default constructor
+     * @param items - array of Item
+     */
     constructor(items = [] as Array<Item>) {
         this.items = items;
     }
 
+    /**
+     * Updates the selling date (sellin) and quality of a product
+     * based on the product type
+     */
     updateQuality() {
         // Keep track of items to remove
         let itemsToRemove = [];
@@ -18,7 +30,7 @@ export class StoreInventory {
                 case PRODUCT_TYPE.AGED:
                     this.items[i].sellIn--;
                     // AGED products (like cheese) are the only ones that increase in quality
-                    if ( this.items[i].quality < 25 )  {
+                    if ( this.items[i].quality < MAX_PRODUCT_QUALITY )  {
                         this.items[i].quality++;
                     }
                     break;
@@ -49,7 +61,7 @@ export class StoreInventory {
             }
 
             // Create list of items to remove as they are too old
-            if ( this.items[i].sellIn < -5 ) {
+            if ( this.items[i].sellIn < MIN_SELL_EXPIRATION ) {
                 itemsToRemove.push(i)
             }
         }
@@ -58,7 +70,13 @@ export class StoreInventory {
         for (let i = 0; i < itemsToRemove.length; i++) {
             this.items.splice(itemsToRemove[i] - i, 1)
         }
+    }
 
+    /**
+     * Returns the current inventory of the store
+     * @returns Array of Item - the inventory of the store
+     */
+    getInventory() {
         return this.items;
     }
 }
