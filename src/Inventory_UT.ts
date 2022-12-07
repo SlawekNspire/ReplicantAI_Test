@@ -1,8 +1,11 @@
+/**
+ * Unit tests for Inventory and ItemClass.  Tested using chai and sinon-chai packages.
+ */
+
+// Imports
 import { Item, PRODUCT_TYPE } from "./ItemClass";
 import { StoreInventory } from "./StoreInventoryClass";
-/**  
- * Unit Tests 
- */
+
 
 let chai = require('chai')
 let sinonChai = require('sinon-chai')
