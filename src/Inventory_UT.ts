@@ -3,7 +3,10 @@
  */
 
 // Imports
-import { Item, PRODUCT_TYPE } from "./ItemClass";
+import { AgedItem } from "./AgedItemClass";
+import { InorganicItem } from "./InorganicItemClass";
+import { Item } from "./ItemClass";
+import { OrganicItem } from "./OrganicItemClass";
 import { StoreInventory } from "./StoreInventoryClass";
 
 
@@ -19,9 +22,9 @@ console.log('Tests started');
 try {
 
     let testItmes = [
-        new Item("test_organic",   10, 10, PRODUCT_TYPE.ORGANIC),
-        new Item("test_inorganic", 10, 10, PRODUCT_TYPE.INORGANIC),
-        new Item("test_cheese",    10, 10, PRODUCT_TYPE.AGED),
+        new OrganicItem("test_organic",   10, 10),
+        new InorganicItem("test_inorganic", 10, 10),
+        new AgedItem("test_cheese",    10, 10),
         new Item("test_normal",    10, 10),
         new Item("test_old",        0,  0),
     ];
