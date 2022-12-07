@@ -202,8 +202,8 @@
         "affectsGlobalScope": true
       },
       "./src/itemclass.ts": {
-        "version": "a56d0c0e0bff12280be637f7fd2f43a7e183010e80791fab71be384f726b52fe",
-        "signature": "a1feafeb6162370199a879fa45e3a8ca0679823abcb2f85e97a113a901f61a3d",
+        "version": "5911e0b21e067b4a8fc1d33f52850eee5c93267e4dcda29cbcc3ef62734cc87c",
+        "signature": "6959921e761b1fa75015f0c59119023fad9fc2bb629fad9b46d760b92f1fa637",
         "affectsGlobalScope": false
       },
       "./src/storeinventoryclass.ts": {
@@ -217,8 +217,118 @@
         "affectsGlobalScope": false
       },
       "./src/inventory_ut.ts": {
-        "version": "a374e80aaa130cb46f9332d9ce7b9fb7e3dae5b9d9e826e9667138fdd801f900",
+        "version": "2c003d35c566fd4436529b23cf64c95e6a28e9a924836ecc064a1b2ac9f4239d",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/linkify-it/index.d.ts": {
+        "version": "6503fb6addf62f9b10f8564d9869ad824565a914ec1ac3dd7d13da14a3f57036",
+        "signature": "6503fb6addf62f9b10f8564d9869ad824565a914ec1ac3dd7d13da14a3f57036",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/mdurl/encode.d.ts": {
+        "version": "f313731860257325f13351575f381fef333d4dfe30daf5a2e72f894208feea08",
+        "signature": "f313731860257325f13351575f381fef333d4dfe30daf5a2e72f894208feea08",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/mdurl/decode.d.ts": {
+        "version": "951b37f7d86f6012f09e6b35f1de57c69d75f16908cb0adaa56b93675ea0b853",
+        "signature": "951b37f7d86f6012f09e6b35f1de57c69d75f16908cb0adaa56b93675ea0b853",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/mdurl/parse.d.ts": {
+        "version": "3816fc03ffd9cbd1a7a3362a264756a4a1d547caabea50ca68303046be40e376",
+        "signature": "3816fc03ffd9cbd1a7a3362a264756a4a1d547caabea50ca68303046be40e376",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/mdurl/format.d.ts": {
+        "version": "0c417b4ec46b88fb62a43ec00204700b560d01eb5677c7faa8ecd34610f096a8",
+        "signature": "0c417b4ec46b88fb62a43ec00204700b560d01eb5677c7faa8ecd34610f096a8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/mdurl/index.d.ts": {
+        "version": "13d29cdeb64e8496424edf42749bbb47de5e42d201cf958911a4638cbcffbd3f",
+        "signature": "13d29cdeb64e8496424edf42749bbb47de5e42d201cf958911a4638cbcffbd3f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/common/utils.d.ts": {
+        "version": "0f9e381eecc5860f693c31fe463b3ca20a64ca9b8db0cf6208cd4a053f064809",
+        "signature": "0f9e381eecc5860f693c31fe463b3ca20a64ca9b8db0cf6208cd4a053f064809",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/token.d.ts": {
+        "version": "95902d5561c6aac5dfc40568a12b0aca324037749dcd32a81f23423bfde69bab",
+        "signature": "95902d5561c6aac5dfc40568a12b0aca324037749dcd32a81f23423bfde69bab",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts": {
+        "version": "5dfb2aca4136abdc5a2740f14be8134a6e6b66fd53470bb2e954e40f8abfaf3e",
+        "signature": "5dfb2aca4136abdc5a2740f14be8134a6e6b66fd53470bb2e954e40f8abfaf3e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts": {
+        "version": "577463167dd69bd81f76697dfc3f7b22b77a6152f60a602a9218e52e3183ad67",
+        "signature": "577463167dd69bd81f76697dfc3f7b22b77a6152f60a602a9218e52e3183ad67",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts": {
+        "version": "b8396e9024d554b611cbe31a024b176ba7116063d19354b5a02dccd8f0118989",
+        "signature": "b8396e9024d554b611cbe31a024b176ba7116063d19354b5a02dccd8f0118989",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts": {
+        "version": "4b28e1c5bf88d891e07a1403358b81a51b3ba2eae1ffada51cca7476b5ac6407",
+        "signature": "4b28e1c5bf88d891e07a1403358b81a51b3ba2eae1ffada51cca7476b5ac6407",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/helpers/index.d.ts": {
+        "version": "7150ad575d28bf98fae321a1c0f10ad17b127927811f488ded6ff1d88d4244e5",
+        "signature": "7150ad575d28bf98fae321a1c0f10ad17b127927811f488ded6ff1d88d4244e5",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/ruler.d.ts": {
+        "version": "8b155c4757d197969553de3762c8d23d5866710301de41e1b66b97c9ed867003",
+        "signature": "8b155c4757d197969553de3762c8d23d5866710301de41e1b66b97c9ed867003",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts": {
+        "version": "93733466609dd8bf72eace502a24ca7574bd073d934216e628f1b615c8d3cb3c",
+        "signature": "93733466609dd8bf72eace502a24ca7574bd073d934216e628f1b615c8d3cb3c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/parser_block.d.ts": {
+        "version": "45e9228761aabcadb79c82fb3008523db334491525bdb8e74e0f26eaf7a4f7f4",
+        "signature": "45e9228761aabcadb79c82fb3008523db334491525bdb8e74e0f26eaf7a4f7f4",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts": {
+        "version": "aeacac2778c9821512b6b889da79ac31606a863610c8f28da1e483579627bf90",
+        "signature": "aeacac2778c9821512b6b889da79ac31606a863610c8f28da1e483579627bf90",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/parser_core.d.ts": {
+        "version": "569fdb354062fc098a6a3ba93a029edf22d6fe480cf72b231b3c07832b2e7c97",
+        "signature": "569fdb354062fc098a6a3ba93a029edf22d6fe480cf72b231b3c07832b2e7c97",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/parser_inline.d.ts": {
+        "version": "bf9876e62fb7f4237deafab8c7444770ef6e82b4cad2d5dc768664ff340feeb2",
+        "signature": "bf9876e62fb7f4237deafab8c7444770ef6e82b4cad2d5dc768664ff340feeb2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/renderer.d.ts": {
+        "version": "6cf60e76d37faf0fbc2f80a873eab0fd545f6b1bf300e7f0823f956ddb3083e9",
+        "signature": "6cf60e76d37faf0fbc2f80a873eab0fd545f6b1bf300e7f0823f956ddb3083e9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/lib/index.d.ts": {
+        "version": "6adaa6103086f931e3eee20f0987e86e8879e9d13aa6bd6075ccfc58b9c5681c",
+        "signature": "6adaa6103086f931e3eee20f0987e86e8879e9d13aa6bd6075ccfc58b9c5681c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/markdown-it/index.d.ts": {
+        "version": "ee0af0f2b8d3b4d0baf669f2ff6fcef4a8816a473c894cc7c905029f7505fed0",
+        "signature": "ee0af0f2b8d3b4d0baf669f2ff6fcef4a8816a473c894cc7c905029f7505fed0",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/ts4.8/assert.d.ts": {
@@ -502,6 +612,111 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./node_modules/@types/linkify-it/index.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/index.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/common/utils.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/index.d.ts": [
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts": [
+        "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts": [
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/index.d.ts": [
+        "./node_modules/@types/linkify-it/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/common/utils.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_block.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_core.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_inline.d.ts",
+        "./node_modules/@types/markdown-it/lib/renderer.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_block.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_core.d.ts": [
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_inline.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/renderer.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/ruler.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/token.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/decode.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/encode.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/format.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/index.d.ts": [
+        "./node_modules/@types/mdurl/decode.d.ts",
+        "./node_modules/@types/mdurl/encode.d.ts",
+        "./node_modules/@types/mdurl/format.d.ts",
+        "./node_modules/@types/mdurl/parse.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/parse.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
       "./node_modules/@types/node/ts4.8/assert.d.ts": [
         "./node_modules/@types/node/ts4.8/assert.d.ts",
         "./node_modules/@types/node/ts4.8/util.d.ts"
@@ -992,6 +1207,111 @@
       ]
     },
     "exportedModulesMap": {
+      "./node_modules/@types/linkify-it/index.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/index.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/common/utils.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/index.d.ts": [
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts": [
+        "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts": [
+        "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/index.d.ts": [
+        "./node_modules/@types/linkify-it/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/common/utils.d.ts",
+        "./node_modules/@types/markdown-it/lib/helpers/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_block.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_core.d.ts",
+        "./node_modules/@types/markdown-it/lib/parser_inline.d.ts",
+        "./node_modules/@types/markdown-it/lib/renderer.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_block.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_core.d.ts": [
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/parser_inline.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+        "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/renderer.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/ruler.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts": [
+        "./node_modules/@types/markdown-it/lib/index.d.ts",
+        "./node_modules/@types/markdown-it/lib/token.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/markdown-it/lib/token.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/decode.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/encode.d.ts": [
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/format.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/index.d.ts": [
+        "./node_modules/@types/mdurl/decode.d.ts",
+        "./node_modules/@types/mdurl/encode.d.ts",
+        "./node_modules/@types/mdurl/format.d.ts",
+        "./node_modules/@types/mdurl/parse.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
+      "./node_modules/@types/mdurl/parse.d.ts": [
+        "./node_modules/@types/mdurl/index.d.ts",
+        "./node_modules/@types/node/ts4.8/util.d.ts"
+      ],
       "./node_modules/@types/node/ts4.8/assert.d.ts": [
         "./node_modules/@types/node/ts4.8/assert.d.ts",
         "./node_modules/@types/node/ts4.8/util.d.ts"
@@ -1468,6 +1788,28 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "./node_modules/@types/linkify-it/index.d.ts",
+      "./node_modules/@types/markdown-it/index.d.ts",
+      "./node_modules/@types/markdown-it/lib/common/utils.d.ts",
+      "./node_modules/@types/markdown-it/lib/helpers/index.d.ts",
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_destination.d.ts",
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_label.d.ts",
+      "./node_modules/@types/markdown-it/lib/helpers/parse_link_title.d.ts",
+      "./node_modules/@types/markdown-it/lib/index.d.ts",
+      "./node_modules/@types/markdown-it/lib/parser_block.d.ts",
+      "./node_modules/@types/markdown-it/lib/parser_core.d.ts",
+      "./node_modules/@types/markdown-it/lib/parser_inline.d.ts",
+      "./node_modules/@types/markdown-it/lib/renderer.d.ts",
+      "./node_modules/@types/markdown-it/lib/ruler.d.ts",
+      "./node_modules/@types/markdown-it/lib/rules_block/state_block.d.ts",
+      "./node_modules/@types/markdown-it/lib/rules_core/state_core.d.ts",
+      "./node_modules/@types/markdown-it/lib/rules_inline/state_inline.d.ts",
+      "./node_modules/@types/markdown-it/lib/token.d.ts",
+      "./node_modules/@types/mdurl/decode.d.ts",
+      "./node_modules/@types/mdurl/encode.d.ts",
+      "./node_modules/@types/mdurl/format.d.ts",
+      "./node_modules/@types/mdurl/index.d.ts",
+      "./node_modules/@types/mdurl/parse.d.ts",
       "./node_modules/@types/node/ts4.8/assert.d.ts",
       "./node_modules/@types/node/ts4.8/assert/strict.d.ts",
       "./node_modules/@types/node/ts4.8/async_hooks.d.ts",

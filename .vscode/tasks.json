@@ -22,6 +22,11 @@
 			"problemMatcher": [],
 			"label": "npm: build",
 			"detail": "tsc"
+		},
+		{
+			"label": "doc",
+			"type": "shell",
+			"command": "npx typedoc --out docs ./src/*",
 		}
 	]
 }

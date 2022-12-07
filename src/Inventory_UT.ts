@@ -5,7 +5,6 @@ import { StoreInventory } from "./StoreInventoryClass";
  */
 
 let chai = require('chai')
-// let sinon = require('sinon')
 let sinonChai = require('sinon-chai')
 let expect = chai.expect
 
@@ -26,13 +25,14 @@ try {
     let testInventory = new StoreInventory(testItmes);
 
     // Check for exception when entering wrong quality
-    chai.expect(function () { new Item("test_wrong", 10, -1) }).to.throw('Quality has to between 0 and 25');
+    chai.expect(function () { new Item("test_too_good", 10, -1) }).to.throw('Quality has to between 0 and');
+    chai.expect(function () { new Item("test_too_old", -6, 10) }).to.throw('sellIn cannot be less than');
 
     // Decreases quality
     testInventory.updateQuality();
 
     // Check for sell in update
-    console.log(expect(testItmes[1].sellIn).to.equal(10));
+    expect(testItmes[1].sellIn).to.equal(10);
     expect(testItmes[3].sellIn).to.equal(9);
 
     // Check for quality update
